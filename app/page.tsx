@@ -5,13 +5,7 @@ import { CTA } from 'components/sections/cta';
 import { Reviews } from 'components/sections/reviews';
 import { ServiceCards } from 'components/sections/service-cards';
 
-export const metadata: Metadata = {
-  title: 'Home',
-  datePublished: '14/07/2024',
-  breadcrumbs: [{ name: 'Home', href: '/' }]
-};
-
-export default function Home() {
+export default function Page() {
   return (
     <main>
       <ServiceCards />

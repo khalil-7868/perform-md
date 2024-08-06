@@ -22,7 +22,7 @@ export const NAV_DATA = [
       {
         label: 'Item 4',
         link: '#'
-      },
+      }
     ]
   },
   {
@@ -48,7 +48,7 @@ export const NAV_DATA = [
       {
         label: 'Item 4',
         link: '#'
-      },
+      }
     ]
   }
-]
+];
