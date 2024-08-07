@@ -7,10 +7,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
-import { cn } from 'lib/utils';
-
 import Dropdown from 'components/dropdown';
-import { ChevronDown } from 'components/icons/chevron-down';
 
 import logo from '../../logo.png';
 
@@ -65,7 +62,7 @@ export function Header() {
             <ArrowUpRight className="absolute right-8 top-1/2 size-4.5 -translate-y-1/2" />
           </Link>
           <Link
-            href="#"
+            href="/schedule-appointment"
             className="relative z-0 flex w-[275px] items-center justify-center bg-[#191C20] text-xl font-bold uppercase -tracking-0.02em text-white"
           >
             <span>schedule</span>
