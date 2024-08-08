@@ -1,4 +1,5 @@
 'use client';
+
 import { useState } from 'react';
 import 'swiper/css';
 import { FreeMode, Navigation, Thumbs } from 'swiper/modules';
@@ -81,7 +82,7 @@ export function PatienceStories() {
                         xmlns="http://www.w3.org/2000/svg"
                       >
                         <g opacity="0.8">
-                          <circle cx="60" cy="60" r="58" stroke="white" stroke-width="4" />
+                          <circle cx="60" cy="60" r="58" stroke="white" strokeWidth="4" />
                           <path d="M88 60L45 83L45 37L88 60Z" fill="white" />
                         </g>
                       </svg>
@@ -133,7 +134,7 @@ export function PatienceStories() {
                         xmlns="http://www.w3.org/2000/svg"
                       >
                         <g opacity="0.8">
-                          <circle cx="30" cy="30" r="29" stroke="white" stroke-width="2" />
+                          <circle cx="30" cy="30" r="29" stroke="white" strokeWidth="2" />
                           <path d="M44 29.999L22.5 41.499L22.5 18.499L44 29.999Z" fill="white" />
                         </g>
                       </svg>

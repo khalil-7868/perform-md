@@ -1,3 +1,4 @@
+import CircleProgress from 'components/circle-progress';
 import Link from 'next/link';
 
 export function PatienceResults() {
@@ -37,21 +38,27 @@ export function PatienceResults() {
 
         <div className="mx-auto mt-20 flex w-full max-w-[1212px] items-start justify-between gap-8">
           <div className="w-full max-w-[302px] text-center">
-            <div className="mb-14 aspect-square w-full bg-red-300"></div>
+            <div className="mb-14 aspect-square w-full">
+                <CircleProgress percentage={76} size={302}/>
+            </div>
             <p className="text-[25px] font-light leading-none text-white">
               <strong className="font-bold">Up to 76%</strong> Average Function Regained
             </p>
           </div>
 
           <div className="w-full max-w-[302px] text-center">
-            <div className="mb-14 aspect-square w-full bg-red-300"></div>
+            <div className="mb-14 aspect-square w-full">
+                <CircleProgress percentage={43} size={302}/>
+            </div>
             <p className="text-[25px] font-light leading-none text-white">
               <strong className="font-bold">43% Decrease</strong> in Joint Pain After 1-month
             </p>
           </div>
 
           <div className="w-full max-w-[302px] text-center">
-            <div className="mb-14 aspect-square w-full bg-red-300"></div>
+            <div className="mb-14 aspect-square w-full">
+                <CircleProgress percentage={51} size={302}/>
+            </div>
             <p className="text-[25px] font-light leading-none text-white">
               <strong className="font-bold">51% Overall</strong> Improvement After 3-months
             </p>
