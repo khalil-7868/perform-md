@@ -1,5 +1,4 @@
 'use client';
-
 import { useState } from 'react';
 import 'swiper/css';
 import { FreeMode, Navigation, Thumbs } from 'swiper/modules';
@@ -110,6 +109,7 @@ export function PatienceStories() {
               direction="vertical"
               slidesPerView={'auto'}
               spaceBetween={24}
+              //@ts-ignore
               onSwiper={setThumbsSwiper}
               freeMode={true}
               modules={[Thumbs, FreeMode, Navigation]}
