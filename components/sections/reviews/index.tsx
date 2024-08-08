@@ -1,6 +1,7 @@
 'use client';
 
 import { ArrowUpRight } from 'lucide-react';
+import 'swiper/css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import Link from 'next/link';

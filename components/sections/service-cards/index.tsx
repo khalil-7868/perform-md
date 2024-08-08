@@ -7,6 +7,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import Image from 'next/image';
 import Link from 'next/link';
 
+import { cn } from 'lib/utils';
+
 import spine_img from './back-shoulder-pain.png';
 import elbow_pain from './elbow-pain.png';
 import foot_and_ankle_pain from './foot-and-ankle-pain.png';
@@ -59,9 +61,21 @@ const servicesData = [
   }
 ];
 
-export function ServiceCards() {
+interface Props {
+  title?: string;
+  className?: string;
+}
+
+export function ServiceCards(props: Props) {
   return (
-    <section className="overflow-hidden bg-[#2A333D] pb-14 pt-11">
+    <section className={cn('overflow-hidden bg-[#2A333D] pb-14 pt-11', props.className)}>
+      {props.title && (
+        <div className="mb-32 px-5">
+          <h2 className="text-center text-[45px] font-bold leading-none text-white">
+            {props.title}
+          </h2>
+        </div>
+      )}
       <div className="relative z-0 px-16">
         <div className="mx-auto mb-20 w-full max-w-[1338px]">
           <Swiper
