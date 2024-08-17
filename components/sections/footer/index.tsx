@@ -34,32 +34,32 @@ export function Footer() {
               <h2 className="mb-14 text-center text-[45px] font-bold leading-none">Links</h2>
               <ul className="grid grid-cols-2 gap-x-3 gap-y-6">
                 <li className="text-[25px] font-light leading-none">
-                  <Link href="#" className="hover:underline">
+                  <Link href="/knee-pain" className="hover:underline">
                     Knee Pain
                   </Link>
                 </li>
                 <li className="text-[25px] font-light leading-none">
-                  <Link href="#" className="hover:underline">
+                  <Link href="/spine-pain" className="hover:underline">
                     Spine Pain
                   </Link>
                 </li>
                 <li className="text-[25px] font-light leading-none">
-                  <Link href="#" className="hover:underline">
+                  <Link href="/hip-pain" className="hover:underline">
                     Hip Pain
                   </Link>
                 </li>
                 <li className="text-[25px] font-light leading-none">
-                  <Link href="#" className="hover:underline">
+                  <Link href="/hand-and-wrist-pain" className="hover:underline">
                     Hand & Wrist Pain
                   </Link>
                 </li>
                 <li className="text-[25px] font-light leading-none">
-                  <Link href="#" className="hover:underline">
+                  <Link href="/shoulder-pain" className="hover:underline">
                     Shoulder Pain
                   </Link>
                 </li>
                 <li className="text-[25px] font-light leading-none">
-                  <Link href="#" className="hover:underline">
+                  <Link href="/elbow-pain" className="hover:underline">
                     Elbow Pain
                   </Link>
                 </li>
@@ -69,7 +69,7 @@ export function Footer() {
                   </Link>
                 </li>
                 <li className="text-[25px] font-light leading-none">
-                  <Link href="#" className="hover:underline">
+                  <Link href="/foot-and-ankle-pain" className="hover:underline">
                     Ankle & Foot Pain
                   </Link>
                 </li>

@@ -1,10 +1,12 @@
 import { PhoneCall, User } from 'lucide-react';
+import { CSSProperties } from 'react';
 
 import Image, { StaticImageData } from 'next/image';
 import Link from 'next/link';
 
 interface Props {
   background: StaticImageData;
+  gradientLayerStyles?: CSSProperties;
 }
 
 export function PainHero(props: Props) {
@@ -57,9 +59,12 @@ export function PainHero(props: Props) {
       <Image
         src={props.background}
         alt="background"
-        className="pointer-events-none absolute inset-0 -z-20 size-full object-cover"
+        className="pointer-events-none absolute inset-0 -z-30 size-full object-cover"
       />
-      <div className="absolute inset-0 -z-10 size-full bg-[#2A333D]/50" />
+      <div className="absolute inset-0 -z-20 size-full bg-[#2A333D]/50" />
+      {props.gradientLayerStyles && (
+        <div className="absolute inset-0 -z-10 size-full" style={props.gradientLayerStyles} />
+      )}
     </section>
   );
 }

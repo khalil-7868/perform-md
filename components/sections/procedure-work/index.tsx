@@ -13,7 +13,12 @@ export function ProcedureWork() {
 
         <div className="flex items-start justify-between gap-8">
           <div className="relative z-0 w-full max-w-[654px] pl-12">
-            <Image src={sd} alt="Bone Marrow Concentrate" width={208} objectFit="contain" />
+            <Image
+              src={sd}
+              alt="Bone Marrow Concentrate"
+              width={208}
+              style={{ objectFit: 'contain' }}
+            />
 
             <div className="mt-12 space-y-5 text-[19px] font-light leading-none text-white">
               <p>
@@ -45,7 +50,12 @@ export function ProcedureWork() {
           </div>
 
           <div className="relative z-0 w-full max-w-[654px] pl-12">
-            <Image src={scp} alt="Bone Marrow Concentrate" width={208} objectFit="contain" />
+            <Image
+              src={scp}
+              alt="Bone Marrow Concentrate"
+              width={208}
+              style={{ objectFit: 'contain' }}
+            />
 
             <div className="mt-12 space-y-5 text-[19px] font-light leading-none text-white">
               <p>
