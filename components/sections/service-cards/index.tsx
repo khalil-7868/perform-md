@@ -22,42 +22,42 @@ const servicesData = [
   {
     title: 'Knee',
     banner: knee_pain,
-    link: '#'
+    link: '/knee-pain'
   },
   {
     title: 'Hip',
     banner: hip_pain,
-    link: '#'
+    link: '/hip-pain'
   },
   {
     title: 'Shoulder',
     banner: shoulder_img,
-    link: '#'
+    link: '/shoulder-pain'
   },
   {
     title: 'Wrist',
     banner: wrist_pain,
-    link: '#'
+    link: '/hand-and-wrist-pain'
   },
   {
     title: 'Foot & Ankle',
     banner: foot_and_ankle_pain,
-    link: '#'
+    link: '/foot-and-ankle-pain'
   },
   {
     title: 'Hand & Wrist',
     banner: hand_and_wrist_pain,
-    link: '#'
+    link: '/hand-and-wrist-pain'
   },
   {
     title: 'Elbow',
     banner: elbow_pain,
-    link: '#'
+    link: '/elbow-pain'
   },
   {
     title: 'Spine',
     banner: spine_img,
-    link: '#'
+    link: '/spine-pain'
   }
 ];
 
@@ -107,7 +107,7 @@ export function ServiceCards(props: Props) {
                     }}
                   >
                     <h3 className="text-[42px] leading-[.9] -tracking-[0.841px] text-white">
-                      <strong className="font-extrabold">Knee</strong>
+                      <strong className="font-extrabold">{service.title}</strong>
                       <span className="block font-light">Pain?</span>
                     </h3>
                     <svg

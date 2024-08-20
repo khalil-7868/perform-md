@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import NextTopLoader from 'nextjs-toploader';
 
 import localFont from 'next/font/local';
 
@@ -145,6 +146,18 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={cn(stage_grotesk.variable, next_sphere.variable)}>
       <body className="bg-dark-1E242B">
+        <NextTopLoader
+          color="#50C3E9"
+          initialPosition={0.08}
+          crawlSpeed={200}
+          height={6}
+          crawl={false}
+          showSpinner={false}
+          easing="linear"
+          speed={400}
+          zIndex={1600}
+          showAtBottom={true}
+        />
         <Header />
         {children}
         <Footer />
