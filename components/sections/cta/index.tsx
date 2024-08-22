@@ -26,14 +26,14 @@ export function CTA(props: Props) {
         </p>
         <div className="flex items-center justify-center gap-4.5">
           <Link
-            href="#"
+            href="tel:+18888282131"
             className="flex h-10 items-center justify-center gap-1.5 bg-white px-6 text-sm font-bold uppercase -tracking-0.02em text-[#2A333D]"
           >
             <span>Give us a call</span>
             <ArrowUpRight className="size-4.5 shrink-0 text-current" />
           </Link>
           <Link
-            href="#"
+            href="/schedule-appointment"
             className="flex h-10 items-center justify-center gap-1.5 bg-primary px-6 text-sm font-bold uppercase -tracking-0.02em text-white"
           >
             <span>schedule APPOINTMENT</span>

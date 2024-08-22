@@ -49,7 +49,7 @@ export function PainHero(props: Props) {
             <PhoneCall className="size-6 text-primary" />
             <span>Call 702-830-7216</span>
           </Link>
-          <Link href="#" className="flex items-center gap-2 text-xl text-white">
+          <Link href="/become-candidate" className="flex items-center gap-2 text-xl text-white">
             <User className="size-6 text-primary" />
             <span>Are you a candidate? </span>
           </Link>

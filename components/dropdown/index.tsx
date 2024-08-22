@@ -10,7 +10,7 @@ interface Props {
   label: string;
   dropdownItems: {
     label: string;
-    link: string;
+    link?: string;
   }[];
 }
 
@@ -36,12 +36,21 @@ export default function Dropdown(props: Props) {
           >
             {props.dropdownItems.map((item, index) => (
               <MenuItem key={index}>
-                <Link
-                  href={item.link}
-                  className="group flex w-full items-center gap-2 rounded-lg px-4 py-2 uppercase transition-all data-[focus]:bg-primary"
-                >
-                  {item.label}
-                </Link>
+                <>
+                  {item.link && (
+                    <Link
+                      href={item.link}
+                      className="group flex w-full items-center gap-2 rounded-lg px-4 py-2 uppercase transition-all hover:bg-primary data-[focus]:bg-primary"
+                    >
+                      {item.label}
+                    </Link>
+                  )}
+                  {!item.link && (
+                    <span className="group flex w-full items-center gap-2 rounded-lg px-4 py-2 uppercase transition-all data-[focus]:bg-primary">
+                      {item.label}
+                    </span>
+                  )}
+                </>
               </MenuItem>
             ))}
           </MenuItems>

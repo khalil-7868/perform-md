@@ -83,7 +83,7 @@ export function Acheivements() {
                   and spine pain.
                 </p>
                 <Link
-                  href="#"
+                  href="/schedule-appointment"
                   className="flex h-10 w-fit items-center justify-center gap-1.5 bg-primary px-6 text-sm font-bold uppercase -tracking-0.02em text-white"
                 >
                   <span>schedule APPOINTMENT</span>

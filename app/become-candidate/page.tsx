@@ -1,14 +1,16 @@
 import { Metadata } from 'next';
 
+import { CandidateForm } from 'components/sections/candidate-form';
+
 export const metadata: Metadata = {
-  title: 'Candidate Form',
+  title: 'Become a Candidate',
   description: 'Submit your Candidate Form'
 };
 
 export default function Page() {
   return (
     <main>
-      <p>This is page</p>
+      <CandidateForm />
     </main>
   );
 }

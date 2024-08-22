@@ -50,19 +50,7 @@ export const NAV_DATA = [
     link: '#',
     dropdownItems: [
       {
-        label: 'Item 1',
-        link: '#'
-      },
-      {
-        label: 'Item 2',
-        link: '#'
-      },
-      {
-        label: 'Item 3',
-        link: '#'
-      },
-      {
-        label: 'Item 4',
+        label: 'Miami',
         link: '#'
       }
     ]
