@@ -37,13 +37,13 @@ export function AboutDoctor(props: Props) {
   return (
     <>
       {varient === 'default' && (
-        <section className="mx-auto w-full max-w-[1920px] px-32 pb-[67px] pt-9">
-          <div className="ml-auto flex w-full max-w-[1572px] items-center justify-between gap-10">
+        <section className="mx-auto w-full max-w-[1920px] px-4 pb-[67px] pt-9 sm:px-10 xl:px-32">
+          <div className="ml-auto flex w-full max-w-[1572px] flex-col items-center justify-between gap-16 lg:flex-row lg:gap-10">
             <div className="w-full max-w-[1022px] text-white">
-              <h2 className="mb-9 text-[45px] font-bold leading-none">{title}</h2>
-              <div className="mb-9 text-xl font-light leading-none">{description}</div>
-              <div className="relative z-0 flex w-full items-end gap-4.5 text-xl font-medium uppercase text-white">
-                <div className="flex size-10 shrink-0 items-center justify-center border border-white">
+              <h2 className="mb-9 text-[35px] font-bold leading-none md:text-[45px]">{title}</h2>
+              <div className="mb-9 text-lg font-light leading-none md:text-xl">{description}</div>
+              <div className="relative z-0 flex w-fit items-end gap-1.5 text-sm font-medium uppercase text-white md:gap-4.5 md:text-xl xl:w-full">
+                <div className="flex size-4 shrink-0 items-center justify-center border border-white xl:size-10">
                   <svg
                     width="34"
                     height="34"
@@ -58,17 +58,17 @@ export function AboutDoctor(props: Props) {
                   </svg>
                 </div>
                 <div className="pointer-events-none flex-1">
-                  <span className="block w-fit pb-2.5">{button_label}</span>
+                  <span className="block w-fit xl:px-1.5 xl:pb-2.5">{button_label}</span>
                   <hr className="w-full max-w-[955px] border-t-white" />
                 </div>
                 <Link href={button_link} className="absolute inset-y-0 left-0 z-10 w-52" />
               </div>
             </div>
-            <div className="w-full max-w-[442px]">
+            <div className="order-last w-full sm:max-w-[442px] xl:order-none">
               <Image
                 src={picture}
                 alt={title}
-                className="h-[325px] w-full object-cover object-top"
+                className="aspect-square w-full object-cover object-top sm:aspect-auto sm:h-[325px]"
               />
             </div>
           </div>
@@ -76,13 +76,13 @@ export function AboutDoctor(props: Props) {
       )}
 
       {varient === 'pic-start' && (
-        <section className="mx-auto w-full max-w-[1920px] px-[120px] pb-[67px] pt-9">
-          <div className="ml-auto flex w-full max-w-[1592px] items-center justify-between gap-10">
-            <div className="w-full max-w-[287px]">
+        <section className="mx-auto w-full max-w-[1920px] px-4 pb-[67px] pt-9 sm:px-10 xl:px-[120px]">
+          <div className="ml-auto flex w-full max-w-[1592px] flex-col items-center justify-between gap-16 lg:flex-row lg:gap-10">
+            <div className="order-last w-full sm:max-w-[287px] xl:order-none">
               <Image
                 src={picture}
                 alt={title}
-                className="mb-4 block h-[287px] w-full object-cover object-top"
+                className="mb-4 block aspect-square w-full object-cover object-top sm:aspect-auto sm:h-[287px]"
               />
               <h5 className="mb-1.5 text-center text-15 font-bold uppercase leading-none tracking-[0.05em] text-white">
                 peter michael
@@ -92,14 +92,14 @@ export function AboutDoctor(props: Props) {
               </p>
             </div>
             <div className="w-full max-w-[1075px] text-white">
-              <h2 className="mb-9 text-[45px] font-bold leading-none">{title}</h2>
+              <h2 className="mb-9 text-[35px] font-bold leading-none md:text-[45px]">{title}</h2>
               <div className="mb-9 text-[25px] font-light leading-none">{description}</div>
-              <div className="relative z-0 flex w-full items-end gap-7 text-xl font-medium uppercase text-white">
+              <div className="relative z-0 flex w-fit items-end gap-2 text-sm font-medium uppercase text-white md:text-xl xl:w-full xl:gap-7">
                 <div className="pointer-events-none flex-1">
-                  <span className="ml-auto block w-fit pb-2.5">{button_label}</span>
+                  <span className="ml-auto block w-fit xl:px-1.5 xl:pb-2.5">{button_label}</span>
                   <hr className="ml-auto w-full max-w-[1007px] border-t-white" />
                 </div>
-                <div className="flex size-10 shrink-0 items-center justify-center border border-white">
+                <div className="flex size-4 shrink-0 items-center justify-center border border-white xl:size-10">
                   <svg
                     width="34"
                     height="34"

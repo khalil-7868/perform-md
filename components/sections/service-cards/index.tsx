@@ -68,18 +68,20 @@ interface Props {
 
 export function ServiceCards(props: Props) {
   return (
-    <section className={cn('overflow-hidden bg-[#2A333D] pb-14 pt-11', props.className)}>
+    <section
+      className={cn('overflow-hidden bg-[#2A333D] pb-9 pt-6 md:pb-14 md:pt-11', props.className)}
+    >
       {props.title && (
-        <div className="mb-32 px-5">
-          <h2 className="text-center text-[45px] font-bold leading-none text-white">
+        <div className="mb-16 px-5 md:mb-32">
+          <h2 className="text-center text-2xl font-bold !leading-none text-white md:text-[45px]">
             {props.title}
           </h2>
         </div>
       )}
-      <div className="relative z-0 px-16">
-        <div className="mx-auto mb-20 w-full max-w-[1338px]">
+      <div className="relative z-0 px-4 md:px-10 lg:px-16">
+        <div className="mx-auto mb-10 w-full max-w-[1338px] md:mb-20">
           <Swiper
-            slidesPerView={3}
+            slidesPerView={1.4}
             modules={[Scrollbar, Navigation]}
             scrollbar={{
               el: '.service-scroll-bar',
@@ -90,15 +92,25 @@ export function ServiceCards(props: Props) {
               prevEl: '.service-prev',
               nextEl: '.service-next'
             }}
-            spaceBetween={46}
+            spaceBetween={23}
             className="!overflow-visible"
+            breakpoints={{
+              640: {
+                slidesPerView: 2,
+                spaceBetween: 20
+              },
+              1100: {
+                slidesPerView: 3,
+                spaceBetween: 46
+              }
+            }}
           >
             {servicesData.map((service, index) => (
               <SwiperSlide
                 key={index}
-                className="group border-8 border-transparent transition-all duration-200 [&.swiper-slide-active]:border-primary "
+                className="group border-4 border-transparent transition-all duration-200 md:border-8 [&.swiper-slide-active]:border-primary "
               >
-                <div className="relative z-0 h-[486px] w-full border-b-8 border-b-white group-[&.swiper-slide-active]:border-b-primary">
+                <div className="relative z-0 h-[253px] w-full border-b-8 border-b-white group-[&.swiper-slide-active]:border-b-primary md:h-[486px]">
                   <div
                     className="absolute inset-x-0 top-0 z-10 flex h-[134px] items-start justify-between gap-5 pb-5 pl-4.5 pr-6 pt-4.5"
                     style={{
@@ -106,12 +118,12 @@ export function ServiceCards(props: Props) {
                         'linear-gradient(180deg, rgba(42, 51, 61, 0.64) 46.66%, rgba(42, 51, 61, 0.00) 100%)'
                     }}
                   >
-                    <h3 className="text-[42px] leading-[.9] -tracking-[0.841px] text-white">
+                    <h3 className="text-2xl leading-[.9] -tracking-0.02em text-white md:text-[42px] md:-tracking-[0.841px]">
                       <strong className="font-extrabold">{service.title}</strong>
                       <span className="block font-light">Pain?</span>
                     </h3>
                     <svg
-                      className="shrink-0"
+                      className="size-4 shrink-0 md:size-auto"
                       xmlns="http://www.w3.org/2000/svg"
                       width="40"
                       height="40"
@@ -134,7 +146,7 @@ export function ServiceCards(props: Props) {
                     className="pointer-events-none size-full object-cover"
                   />
 
-                  <p className="absolute bottom-8 left-1/2 z-10 flex -translate-x-1/2 cursor-pointer items-end gap-2 text-[25.22px] font-light leading-[.8] tracking-[-0.504px] text-white opacity-0 hover:underline group-[&.swiper-slide-active]:opacity-100">
+                  <p className="absolute bottom-4 left-1/2 z-10 flex -translate-x-1/2 cursor-pointer items-end gap-2 text-xs font-light leading-[.8] tracking-[-0.504px] text-white opacity-0 hover:underline group-[&.swiper-slide-active]:opacity-100 md:bottom-8 md:text-[25.22px]">
                     <span>Learn More</span>
                     <svg
                       className="shrink-0"
@@ -160,14 +172,14 @@ export function ServiceCards(props: Props) {
                     }}
                   />
                   <Link href={service.link} className="absolute inset-0 z-20" />
-                  <div className="absolute inset-x-0 -bottom-4 z-0 h-4 bg-white opacity-0 group-[&.swiper-slide-active]:bg-primary group-[&.swiper-slide-active]:opacity-100" />
+                  <div className="absolute -bottom-4 z-0 h-2 bg-white opacity-0 group-[&.swiper-slide-active]:bg-primary group-[&.swiper-slide-active]:opacity-100 md:inset-x-0 md:h-4" />
                   <div className="pointer-events-none absolute inset-0 z-0 bg-[#2A333D]/50" />
                 </div>
               </SwiperSlide>
             ))}
           </Swiper>
         </div>
-        <button className="service-prev absolute left-[8vw] top-1/2 z-50 -translate-y-1/2">
+        <button className="service-prev absolute left-[8vw] top-1/2 z-50 hidden -translate-y-1/2 md:block">
           <svg
             width="34"
             height="61"
@@ -184,7 +196,7 @@ export function ServiceCards(props: Props) {
           </svg>
         </button>
 
-        <button className="service-next absolute right-[8vw] top-1/2 z-50 -translate-y-1/2">
+        <button className="service-next absolute right-[8vw] top-1/2 z-50 hidden -translate-y-1/2 md:block">
           <svg
             width="34"
             height="61"

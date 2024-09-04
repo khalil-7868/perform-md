@@ -2,6 +2,7 @@
 
 import { ArrowUpRight } from 'lucide-react';
 import 'swiper/css';
+import { Scrollbar } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import Link from 'next/link';
@@ -34,9 +35,33 @@ const reviews = [
 
 export function Reviews() {
   return (
-    <section className="bg-[#29313A] px-10 pb-10 pt-11">
+    <section className="bg-[#29313A] px-4 pb-10 pt-11 sm:px-10">
       <div className="mx-auto w-full max-w-[1560px]">
-        <Swiper slidesPerView={4} spaceBetween={52} className="mb-15">
+        <Swiper
+          slidesPerView={1}
+          spaceBetween={24}
+          breakpoints={{
+            1280: {
+              slidesPerView: 4,
+              spaceBetween: 52
+            },
+            850: {
+              slidesPerView: 3,
+              spaceBetween: 32
+            },
+            550: {
+              slidesPerView: 2,
+              spaceBetween: 32
+            }
+          }}
+          modules={[Scrollbar]}
+          scrollbar={{
+            el: '.reviews-scroll-bar',
+            draggable: true,
+            dragClass: 'bg-primary absolute h-0.5 left-0 top-0'
+          }}
+          className="mb-6 lg:mb-15"
+        >
           {reviews.map((review, index) => (
             <SwiperSlide key={index} className="text-white">
               <div className="mb-5 flex items-center gap-3.75">
@@ -59,7 +84,7 @@ export function Reviews() {
                 </ul>
                 <p className="text-xl font-light leading-none">{review.time}</p>
               </div>
-              <p className="mb-4 text-xl leading-normal">{review.description}</p>
+              <p className="mb-4 text-base !leading-normal lg:text-xl">{review.description}</p>
               <div className="flex items-center gap-1">
                 <Google className="size-7 shrink-0" />
                 <Link href="#" className="flex items-center text-base font-medium">
@@ -70,6 +95,9 @@ export function Reviews() {
             </SwiperSlide>
           ))}
         </Swiper>
+        <div className="mb-11 mt-6">
+          <div className="reviews-scroll-bar relative mx-auto h-px w-full max-w-[1592px] bg-[#3B4653] "></div>
+        </div>
         <div className="mx-auto w-full max-w-[1068px] text-center text-base font-thin leading-none text-white">
           <p>
             *DISCLAIMER: Like all medical procedures, Perform MD regenerative orthopedics and spine®

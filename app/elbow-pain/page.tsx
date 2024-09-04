@@ -22,8 +22,9 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <main>
-      <PainHero background={background} />
-      <RegenexxProcedure image={elbowpain} contentOrder="first">
+      <PainHero background={background} backgroundImageClassess='md:object-center object-[length:80%_0%]'/>
+      <p className='object-[length:0_20%]'></p>
+      {/* <RegenexxProcedure image={elbowpain} contentOrder="first">
         <h2 className="mb-16 text-[45px] font-bold leading-[1.1] text-white">
           Regenexx® Procedures <span className="text-primary">for Elbow Injuries </span> Overuse
           Conditions and Arthritis
@@ -95,7 +96,7 @@ export default function Page() {
       <Reviews />
       <ProcedureWork />
       <PatienceStories />
-      <Disclaimer />
+      <Disclaimer /> */}
     </main>
   );
 }

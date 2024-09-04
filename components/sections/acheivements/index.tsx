@@ -35,32 +35,32 @@ const pains = [
 export function Acheivements() {
   return (
     <section className="px-6 pb-12 pt-7">
-      <div className="mx-auto w-full max-w-[1920px] px-32">
-        <div className="ml-auto flex w-full max-w-[1578px] items-start gap-12">
-          <div className="w-full max-w-[1128px] border-t border-t-[#3B4653] pt-12">
-            <div className="mb-16 flex items-start justify-between text-white">
-              <div className="w-full max-w-[141px] text-center">
+      <div className="mx-auto w-full max-w-[1920px] sm:px-4 xl:px-32">
+        <div className="ml-auto flex w-full max-w-[1578px] flex-col items-start gap-12 lg:flex-row">
+          <div className="w-full max-w-[1128px] border-b border-t border-[#3B4653] py-11 sm:border-b-0 lg:pb-0 lg:pt-12">
+            <div className="flex flex-col gap-20 text-white sm:flex-row sm:items-start sm:justify-between sm:gap-0 lg:mb-16">
+              <div className="mx-auto w-full max-w-[141px] text-center sm:mx-0">
                 <h2 className="mb-7 font-primary text-[45px] font-bold leading-none">521+</h2>
                 <p className="text-[17px] font-light uppercase leading-none -tracking-0.02em">
                   patience we helped
                 </p>
               </div>
-              <div className="block h-10 w-px bg-[#3B4653]" />
-              <div className="w-full max-w-[141px] text-center">
+              <div className="hidden h-10 w-px bg-[#3B4653] sm:block" />
+              <div className="mx-auto w-full max-w-[141px] text-center sm:mx-0">
                 <h2 className="mb-7 font-primary text-[45px] font-bold leading-none">7+</h2>
                 <p className="text-[17px] font-light uppercase leading-none -tracking-0.02em">
                   skilled doctors
                 </p>
               </div>
-              <div className="block h-10 w-px bg-[#3B4653]" />
-              <div className="w-full max-w-[141px] text-center">
+              <div className="hidden h-10 w-px bg-[#3B4653] sm:block" />
+              <div className="mx-auto w-full max-w-[141px] text-center sm:mx-0">
                 <h2 className="mb-7 font-primary text-[45px] font-bold leading-none">3+</h2>
                 <p className="text-[17px] font-light uppercase leading-none -tracking-0.02em">
                   locations
                 </p>
               </div>
-              <div className="block h-10 w-px bg-[#3B4653]" />
-              <div className="w-full max-w-[141px] text-center">
+              <div className="hidden h-10 w-px bg-[#3B4653] sm:block" />
+              <div className="mx-auto w-full max-w-[141px] text-center sm:mx-0">
                 <h2 className="mb-7 font-primary text-[45px] font-bold leading-none">3</h2>
                 <p className="text-[17px] font-light uppercase leading-none -tracking-0.02em">
                   BUSINESS
@@ -69,7 +69,7 @@ export function Acheivements() {
                 </p>
               </div>
             </div>
-            <div className="relative z-0 h-[438px] px-11 pt-[74px]">
+            <div className="relative z-0 hidden h-[438px] px-11 pt-[74px] lg:block">
               <div className="w-full max-w-[674px]">
                 <p className="mb-7 flex h-12 w-fit items-center justify-center bg-white px-7 text-[21px] font-medium uppercase text-[#1E242B]">
                   consultation
@@ -100,17 +100,17 @@ export function Acheivements() {
               />
             </div>
           </div>
-          <div className="w-full max-w-[401px]">
+          <div className="flex w-full flex-col lg:block lg:max-w-[401px]">
             <Link
               href="#"
-              className="relative z-0 mb-14 flex h-16 w-full items-center justify-center gap-5 bg-[#485869] px-5 text-[23px] font-black uppercase text-white"
+              className="relative z-0 order-last mt-5 flex h-16 w-full items-center justify-center gap-5 bg-[#485869] px-5 text-[23px] font-black uppercase text-white lg:order-none lg:mb-14 lg:mt-0"
               style={{ boxShadow: '8px 8px #2A333D' }}
             >
               <span>LET’s TALK</span>
               <ArrowUpRight className="-mr-9 size-5.5" />
             </Link>
 
-            <div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:block">
               {pains.map((pain, index) => (
                 <div
                   key={index}
