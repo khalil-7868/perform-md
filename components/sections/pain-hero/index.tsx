@@ -23,7 +23,10 @@ export function PainHero(props: Props) {
           Receive a Regenexx® Patient Info Packet by email to learn more about our regenerative
           orthopedic procedures.
         </p>
-        <form action="#" className="grid grid-cols-1 gap-4.5 sm:grid-cols-2 md:gap-x-4 md:gap-y-7">
+        <form
+          action="/thankyou"
+          className="grid grid-cols-1 gap-4.5 sm:grid-cols-2 md:gap-x-4 md:gap-y-7"
+        >
           <input
             type="text"
             placeholder="first Name *"

@@ -19,17 +19,20 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <main>
-      <PainHero background={background} />
+      <PainHero background={background} backgroundImageClassess="object-[70%_0%]" />
       <RegenexxProcedure
+        titleClasses="mx-auto w-full max-w-[1091px]"
         title={
-          <p className="mx-auto w-full max-w-[1091px]">
+          <>
             Regenexx® Procedures <span className="text-primary">for Foot & Ankle Conditions </span>
-          </p>
+          </>
         }
         image={anklepain}
       >
-        <h4 className="mb-6 text-[25px] font-bold leading-none text-white">Regenexx® Procedures</h4>
-        <p className="text-balance text-[25px] font-light leading-tight text-white">
+        <h4 className="mb-6 text-lg font-bold leading-none text-white lg:text-[25px]">
+          Regenexx® Procedures
+        </h4>
+        <p className="text-balance text-lg font-light leading-tight text-white lg:text-[25px]">
           Orthopedic procedures are non-surgical injection-based procedures for people suffering
           from foot and ankle injuries, arthritis, or other conditions that cause pain. These
           procedures utilize concentrated repair cells that are obtained from your own bone marrow
@@ -53,10 +56,10 @@ export default function Page() {
         videoBanner={anklepain}
         videoUrl="https://youtu.be/JGOuzorrhm8?si=eVoTPXY0GAXGbSDS"
       >
-        <h2 className="mb-11 text-[45px] font-bold leading-[1.1] text-white">
+        <h2 className="mb-11 text-2xl font-bold !leading-[1.1] text-white md:mb-16 md:text-[45px]">
           Considering Ankle Surgery, <br /> Fusion or Replacement?
         </h2>
-        <p className="mb-32 text-balance text-[25px] font-light leading-tight text-white">
+        <p className="mb-11 text-balance text-lg font-light leading-tight text-white lg:mb-32 lg:text-[25px]">
           As an alternative to surgery and the long recuperative period involved, tears to Foot and
           Ankle tendons and ligaments and Ankle Arthritis can often be treated with the healing
           agents from your own body, promoting your body’s ability to do its natural job of healing.{' '}
@@ -65,10 +68,10 @@ export default function Page() {
           specialized, non-surgical, precise image-guided injection procedure. Patients are often
           encouraged to walk the same day, and most experience little downtime from the procedure.
         </p>
-        <h2 className="mb-11 text-[45px] font-bold leading-[1.1] text-white">
+        <h2 className="mb-11 text-2xl font-bold !leading-[1.1] text-white md:mb-16 md:text-[45px]">
           Ankle Ligament Tears, <br /> Sprains and Instability
         </h2>
-        <p className="text-balance text-[25px] font-light leading-tight text-white">
+        <p className="text-balance text-lg font-light leading-tight text-white lg:text-[25px]">
           When the ligaments that hold the bones of the ankle joint together are partially torn or
           stretched, as in the case of a bad sprain or repeated minor sprains, they can become
           painful, loose, and weak. This changes how you walk, putting painful stress on other

@@ -27,7 +27,10 @@ export default function Page() {
       <ProcedureWork />
       <PatienceResults />
       <Disclaimer />
-      <ServiceCards title="Where Are You Experiencing Pain?" className="bg-transparent py-36" />
+      <ServiceCards
+        title="Where Are You Experiencing Pain?"
+        className="bg-transparent py-20 md:py-36"
+      />
       <PatienceStories />
     </main>
   );

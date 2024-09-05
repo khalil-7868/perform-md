@@ -30,13 +30,13 @@ const conditions = [
 
 export function KneeConditions() {
   return (
-    <section className="bg-[#29313A] px-5 py-36">
+    <section className="bg-[#29313A] px-4 py-20 sm:px-5 lg:py-36">
       <div className="mx-auto w-full max-w-[1595px]">
-        <h2 className="mb-32 text-center text-[45px] font-bold leading-none text-white">
+        <h2 className="mb-16 text-center text-2xl font-bold leading-none text-white lg:mb-32 lg:text-[45px]">
           Common Knee Conditions
         </h2>
 
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 gap-11 sm:grid-cols-2 sm:gap-4 lg:grid-cols-3">
           {conditions.map((condition, index) => (
             <div key={index} className="bg-[#1E242B]">
               <Video
@@ -44,9 +44,11 @@ export function KneeConditions() {
                 thumbnail={condition.videoBanner}
                 alt={condition.title}
               />
-              <div className="p-11">
-                <h3 className="mb-9 text-[25px] font-bold text-white">{condition.title}</h3>
-                <p className="text-balance text-[19px] font-light leading-[1.1] text-white">
+              <div className="px-4.5 py-6 md:p-11">
+                <h3 className="mb-6 text-xl font-bold text-white md:mb-9 md:text-[25px]">
+                  {condition.title}
+                </h3>
+                <p className="text-balance text-lg font-light leading-snug text-white md:text-[19px] md:leading-[1.1]">
                   {condition.description}
                 </p>
               </div>

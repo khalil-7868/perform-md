@@ -82,7 +82,7 @@ export function Reviews() {
                     <Star />
                   </li>
                 </ul>
-                <p className="text-xl font-light leading-none">{review.time}</p>
+                <p className="text-base font-light leading-none md:text-xl">{review.time}</p>
               </div>
               <p className="mb-4 text-base !leading-normal lg:text-xl">{review.description}</p>
               <div className="flex items-center gap-1">
@@ -98,7 +98,7 @@ export function Reviews() {
         <div className="mb-11 mt-6">
           <div className="reviews-scroll-bar relative mx-auto h-px w-full max-w-[1592px] bg-[#3B4653] "></div>
         </div>
-        <div className="mx-auto w-full max-w-[1068px] text-center text-base font-thin leading-none text-white">
+        <div className="mx-auto w-full max-w-[1068px] text-center text-[10px] font-thin text-white lg:text-base lg:leading-none">
           <p>
             *DISCLAIMER: Like all medical procedures, Perform MD regenerative orthopedics and spine®
             Procedures have a success and failure rate. Patient reviews and testimonials on this

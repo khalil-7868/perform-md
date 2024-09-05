@@ -22,15 +22,30 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <main>
-      <PainHero background={background} backgroundImageClassess='md:object-center object-[length:80%_0%]'/>
-      <p className='object-[length:0_20%]'></p>
-      {/* <RegenexxProcedure image={elbowpain} contentOrder="first">
-        <h2 className="mb-16 text-[45px] font-bold leading-[1.1] text-white">
+      <PainHero
+        background={background}
+        backgroundImageClassess="md:object-center object-[length:80%_0%]"
+      />
+      <p className="object-[length:0_20%]"></p>
+      <RegenexxProcedure
+        image={elbowpain}
+        contentOrder="first"
+        titleClasses="lg:hidden text-left"
+        title={
+          <>
+            Regenexx® Procedures <span className="text-primary">for Elbow Injuries </span> Overuse
+            Conditions and Arthritis
+          </>
+        }
+      >
+        <h2 className="mb-16 hidden text-2xl font-bold !leading-[1.1] text-white md:text-[45px] lg:block">
           Regenexx® Procedures <span className="text-primary">for Elbow Injuries </span> Overuse
           Conditions and Arthritis
         </h2>
-        <h4 className="mb-6 text-[25px] font-bold leading-none text-white">Regenexx® Procedures</h4>
-        <p className="text-balance text-[25px] font-light leading-tight text-white">
+        <h4 className="mb-6 text-lg font-bold leading-none text-white lg:text-[25px]">
+          Regenexx® Procedures
+        </h4>
+        <p className="text-balance text-lg font-light leading-tight text-white lg:text-[25px]">
           Are highly specialized non-surgical, image-guided injection-based procedures performed
           only by very specially trained Regenexx Physicians for elbow arthritis, overuse conditions
           such as tennis elbow or golfer’s elbow, and other conditions that cause elbow pain. These
@@ -56,7 +71,7 @@ export default function Page() {
         }
         image={ww1}
       >
-        <p className="text-balance text-[25px] font-light leading-tight text-white">
+        <p className="text-balance text-lg font-light leading-tight text-white lg:text-[25px]">
           The elbow is a critical joint in the musculoskeletal system. It doesn’t have to bear
           weight, like a knee or ankle does; however, think of all the things you wouldn’t be able
           to do if you couldn’t bend your arm: button your shirt, drive a car, pick up a baby, and
@@ -72,7 +87,7 @@ export default function Page() {
         </p>
         <Link
           href="#"
-          className="relative z-0 mt-11 flex h-10 w-full max-w-[234px] items-center justify-center rounded bg-primary px-8 text-sm font-bold uppercase -tracking-0.02em text-white"
+          className="relative z-0 mt-11 flex h-10 w-full items-center justify-center rounded bg-primary px-8 text-sm font-bold uppercase -tracking-0.02em text-white sm:max-w-[234px]"
         >
           Download Ebook
           <svg
@@ -96,7 +111,7 @@ export default function Page() {
       <Reviews />
       <ProcedureWork />
       <PatienceStories />
-      <Disclaimer /> */}
+      <Disclaimer />
     </main>
   );
 }

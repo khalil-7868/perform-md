@@ -12,7 +12,6 @@ import { Reviews } from 'components/sections/reviews';
 
 import background from './spine-pain-bg.png';
 import spineThumb from './spine-video-thumb.png';
-import ww1 from './ww1.png';
 
 export const metadata: Metadata = {
   title: 'Spine Pain',
@@ -27,12 +26,14 @@ export default function Page() {
         videoBanner={spineThumb}
         videoUrl="https://youtu.be/8tdqYj3UUDU?si=chpTuLViHJ3A0e_a"
         contentOrder="first"
+        titleClasses="lg:hidden"
+        title={<>Regenexx® Non-Surgical Procedures for Spine-Related Conditions.</>}
       >
-        <h2 className="mb-16 text-[45px] font-bold leading-[1.1] text-white">
+        <h2 className="mb-16 hidden text-2xl font-bold !leading-[1.1] text-white md:text-[45px] lg:block">
           Regenexx® Non-Surgical Procedures for Spine-Related Conditions.
         </h2>
 
-        <p className="text-balance text-[25px] font-light leading-tight text-white">
+        <p className="text-balance text-lg font-light leading-tight text-white lg:text-[25px]">
           The board-certified, highly skilled physicians who are part of the Regenexx Network have a
           range of regenerative orthopedic procedures developed to help reduce pain, improve
           function and avoid spine surgery and the damaging side effects of epidural steroid
@@ -51,16 +52,18 @@ export default function Page() {
       </RegenexxProcedure>
       <CollapseContent />
       <RegenexxProcedure
-        className="bg-transparent pb-32 pt-0"
+        className="bg-transparent pb-20 pt-0 lg:pb-32"
         imageClasses="object-contain max-w-[524px] drop-shadow-[0px_4px_120px_rgba(80,195,233,0.2)]"
         contentOrder={'first'}
         videoBanner={spineThumb}
         videoUrl="https://youtu.be/8tdqYj3UUDU?si=chpTuLViHJ3A0e_a"
+        titleClasses="lg:hidden"
+        title={<>Regenexx Alternative to Spine Surgery or Steroid Epidural Injections</>}
       >
-        <h2 className="mb-16 text-[45px] font-bold leading-[1.1] text-white">
+        <h2 className="mb-16 hidden text-2xl font-bold !leading-[1.1] text-white md:text-[45px] lg:block">
           Regenexx Alternative to Spine Surgery or Steroid Epidural Injections
         </h2>
-        <p className="text-balance text-[25px] font-light leading-tight text-white">
+        <p className="text-balance text-lg font-light leading-tight text-white lg:text-[25px]">
           A steroid epidural is an injection that places steroid medication around irritated or
           inflamed nerves in the spine. While they do help patients avoid surgery, epidurals use
           very high-dose steroids that can cause severe side effects and actually reduce the body’s

@@ -23,21 +23,26 @@ export default function Page() {
     <main>
       <PainHero
         background={background}
+        backgroundImageClassess="object-[70%_0] lg:object-center"
         gradientLayerStyles={{
           background: 'linear-gradient(-90deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.80) 100%)'
         }}
       />
       <RegenexxProcedure
+        titleClasses="mx-auto w-full max-w-[1090px]"
         title={
-          <p className="mx-auto w-full max-w-[1090px]">
+          <>
             Regenexx® Procedures <span className="text-primary">for Knee Arthritis</span>
-            <br /> Meniscus Tears, Tendon & Ligament Tears, Overuse Injuries and Other Conditions
-          </p>
+            <br className="hidden lg:inline-block" /> Meniscus Tears, Tendon & Ligament Tears,
+            Overuse Injuries and Other Conditions
+          </>
         }
         image={kneepain}
       >
-        <h4 className="mb-6 text-[25px] font-bold leading-none text-white">Regenexx® Procedures</h4>
-        <p className="text-balance text-[25px] font-light leading-tight text-white">
+        <h4 className="mb-6 text-lg font-bold leading-none text-white lg:text-[25px]">
+          Regenexx® Procedures
+        </h4>
+        <p className="text-balance text-lg font-light leading-tight text-white lg:text-[25px]">
           Are non-surgical injection-based procedures for people suffering from knee pain due to
           common injuries to the knee Meniscus, ACL,  MCL, and other structures, or who are
           experiencing degenerative conditions such as Osteoarthritis. These procedures utilize
@@ -60,10 +65,10 @@ export default function Page() {
         videoBanner={kneepain}
         videoUrl="https://youtu.be/JGOuzorrhm8?si=eVoTPXY0GAXGbSDS"
       >
-        <h4 className="mb-6 text-[45px] font-bold leading-none text-white">
+        <h4 className="mb-6 text-[25px] font-bold leading-none text-white lg:text-[45px]">
           Your Alternative to Knee Surgery
         </h4>
-        <p className="text-balance text-[25px] font-light leading-tight text-white">
+        <p className="text-balance text-lg font-light leading-tight text-white lg:text-[25px]">
           Surgical options for those dealing with painful knee issues range from arthroscopic knee
           surgery to total knee joint replacement. Recent research has shown that some of the most
           popular arthroscopic surgeries, such as meniscectomy, provide little benefit to the
@@ -80,7 +85,7 @@ export default function Page() {
         videoBanner={kneepain}
         videoUrl="https://youtu.be/JGOuzorrhm8?si=eVoTPXY0GAXGbSDS"
       >
-        <p className="text-balance text-[25px] font-light leading-tight text-white">
+        <p className="text-balance text-lg font-light leading-tight text-white lg:text-[25px]">
           We have seen exciting results on difficult cases, such as complete muscle and ligament
           tears, and we have helped thousands of patients with arthritis avoid knee replacement and
           continue to do the things they love with little or no pain. Most Regenexx patients

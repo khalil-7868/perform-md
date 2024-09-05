@@ -19,19 +19,21 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <main>
-      <PainHero background={background} />
+      <PainHero background={background} backgroundImageClassess="object-[55%_0] lg:object-center" />
       <RegenexxProcedure
         title={
           <p className="mx-auto w-full max-w-[1158px]">
             Regenexx® Procedures <span className="text-primary">for Hip Injuries </span>
-            <br />
+            <br className="hidden lg:inline-block" />
             Arthritis, Bursitis and Other Degenerative Conditions!
           </p>
         }
         image={hippain}
       >
-        <h4 className="mb-6 text-[25px] font-bold leading-none text-white">Regenexx® Procedures</h4>
-        <p className="text-balance text-[25px] font-light leading-tight text-white">
+        <h4 className="mb-6 text-lg font-bold leading-none text-white lg:text-[25px]">
+          Regenexx® Procedures
+        </h4>
+        <p className="text-balance text-lg font-light leading-tight text-white lg:text-[25px]">
           Are non-surgical injection-based procedures for people suffering from hip pain due to
           common injuries, Avascular Necrosis (AVN, Osteonecrosis), Hip Bursitis, Hip Labral Tears,
           Hip Tendonitis, or degenerative problems like Arthritis related to the hip joint. These
@@ -48,7 +50,7 @@ export default function Page() {
       </RegenexxProcedure>
       <CollapseContent />
       <RegenexxProcedure
-        className="bg-transparent pb-32 pt-0"
+        className="bg-transparent pb-20 pt-0 lg:pb-32"
         title={
           <span className="mx-auto block max-w-[679px]">
             Hip Surgery and Replacement vs. Regenexx Procedures
@@ -58,7 +60,7 @@ export default function Page() {
         videoBanner={hippain}
         videoUrl="https://youtu.be/JGOuzorrhm8?si=eVoTPXY0GAXGbSDS"
       >
-        <p className="text-balance text-[25px] font-light leading-tight text-white">
+        <p className="text-balance text-lg font-light leading-tight text-white lg:text-[25px]">
           Hip pain can be very difficult to deal with on a day-to-day basis and traditionally
           requires long-term pain management if the problem is not corrected. Hip surgery, hip
           replacement surgery, and hip resurfacing are often the only medical options presented to a

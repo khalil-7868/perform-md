@@ -5,22 +5,22 @@ import regenexx from './regenexx.png';
 
 export function TrustedAlternative() {
   return (
-    <section className="bg-[#29313A] px-5 py-36">
+    <section className="bg-[#29313A] px-5 py-20 lg:py-36">
       <div className="mx-auto w-full max-w-[1600px]">
-        <h2 className="mb-32 text-center text-[45px] font-bold text-white">
+        <h2 className="mb-16 text-center text-2xl font-bold text-white md:mb-32 md:text-[45px]">
           The Trusted Alternative to Orthopedic Surgery
         </h2>
 
-        <div className="space-y-[152px]">
-          <div className="group flex items-center justify-between gap-10">
-            <div className="w-full max-w-[718px] group-even:order-last">
+        <div className="space-y-16 lg:space-y-[152px]">
+          <div className="group flex flex-col items-center justify-between gap-11 md:gap-10 lg:flex-row">
+            <div className="w-full lg:max-w-[718px] lg:group-even:order-last">
               <Image src={regenexx} alt="Regenexx" className="h-auto w-full object-cover" />
             </div>
-            <div className="w-full max-w-[746px]">
-              <h4 className="mb-6 text-[25px] font-bold leading-none text-white">
+            <div className="w-full lg:max-w-[746px]">
+              <h4 className="mb-6 text-lg font-bold leading-none text-white md:text-[25px]">
                 Regenexx® Procedures
               </h4>
-              <p className="text-balance text-[25px] font-light leading-none text-white">
+              <p className="text-balance text-lg font-light leading-none text-white md:text-[25px]">
                 Provide non-surgical treatment options for those suffering from pain related to
                 osteoarthritis, joint injuries, spine pain, overuse conditions, and common sports
                 injuries. These medical procedures are only performed by highly-skilled doctors
@@ -36,19 +36,19 @@ export function TrustedAlternative() {
             </div>
           </div>
 
-          <div className="group flex items-center justify-between gap-10">
-            <div className="w-full max-w-[718px] group-even:order-last">
+          <div className="group flex flex-col items-center justify-between gap-11 md:gap-10 lg:flex-row">
+            <div className="w-full lg:max-w-[718px] lg:group-even:order-last">
               <Image
                 src={regenexxPhacision}
                 alt="Regenexx Physicians"
                 className="h-auto w-full object-cover"
               />
             </div>
-            <div className="w-full max-w-[746px]">
-              <h4 className="mb-6 text-[25px] font-bold leading-none text-white">
+            <div className="w-full lg:max-w-[746px]">
+              <h4 className="mb-6 text-lg font-bold leading-none text-white md:text-[25px]">
                 Regenexx Physicians
               </h4>
-              <p className="text-balance text-[25px] font-light leading-none text-white">
+              <p className="text-balance text-lg font-light leading-none text-white md:text-[25px]">
                 Represent a very selective, highly-skilled,{' '}
                 <span className="text-primary">interventional orthopedics</span> network that is
                 100% focused on orthopedic conditions. All Regenexx physicians are musculoskeletal

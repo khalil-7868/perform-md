@@ -30,8 +30,13 @@ export default function Page() {
         }
         image={shoulderpain}
       >
-        <h4 className="mb-6 text-[25px] font-bold leading-none text-white">Regenexx® Procedures</h4>
-        <p className="text-balance text-[25px] font-light leading-tight text-white">
+        <h4
+          className="mb-6 
+text-lg font-bold leading-none text-white lg:text-[25px]"
+        >
+          Regenexx® Procedures
+        </h4>
+        <p className="text-balance text-lg font-light leading-tight text-white lg:text-[25px]">
           Orthopedic procedures are non-surgical injection-based procedures for people suffering
           from shoulder pain due to common injuries to the shoulder and rotator cuff, Shoulder
           Labrum, as well as degenerative conditions, such as shoulder osteoarthritis. These
@@ -59,7 +64,7 @@ export default function Page() {
         videoBanner={shoulderpain}
         videoUrl="https://youtu.be/JGOuzorrhm8?si=eVoTPXY0GAXGbSDS"
       >
-        <p className="text-balance text-[25px] font-light leading-tight text-white">
+        <p className="text-balance text-lg font-light leading-tight text-white lg:text-[25px]">
           Using the healing agents from your own body to treat rotator cuff tears, shoulder
           arthritis, and other common shoulder conditions, Regenexx provides an alternative to
           invasive surgeries like rotator cuff tear surgery, shoulder labrum surgery, acromioplasty,

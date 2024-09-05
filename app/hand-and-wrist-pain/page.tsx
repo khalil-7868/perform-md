@@ -19,14 +19,25 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <main>
-      <PainHero background={background} />
-      <RegenexxProcedure image={wristpain} contentOrder="first">
-        <h2 className="mb-20 pb-1.5 text-[45px] font-bold leading-[1.1] text-white">
+      <PainHero background={background} backgroundImageClassess="object-[60%_0] lg:object-center" />
+      <RegenexxProcedure
+        image={wristpain}
+        contentOrder="first"
+        titleClasses="lg:hidden"
+        title={
+          <>
+            Regenexx® Procedures
+            <span className="text-primary">for Hand Wrist</span> & Basal Joint (Thumb) Arthritis &
+            Other Conditions
+          </>
+        }
+      >
+        <h2 className="mb-16 hidden pb-1.5 text-2xl font-bold !leading-[1.1] text-white md:text-[45px] lg:mb-20 lg:block">
           Regenexx® Procedures
           <span className="text-primary">for Hand Wrist</span> & Basal Joint (Thumb) Arthritis &
           Other Conditions
         </h2>
-        <p className="text-balance text-[25px] font-light leading-tight text-white">
+        <p className="text-balance text-lg font-light leading-tight text-white lg:text-[25px]">
           Advanced non-surgical, precise, image-guided, injection procedures using the healing
           agents from your own body for those who are suffering from pain or reduced range of motion
           due to basal joint / CMC arthritis, hand arthritis, or other injuries & conditions in the
@@ -39,14 +50,14 @@ export default function Page() {
         contentOrder={'first'}
         title={
           <>
-            Targeted Procedure for Thumb Basal Joint <br />
+            Targeted Procedure for Thumb Basal Joint <br className="hidden lg:inline-block" />
             CMC Arthritis and Other Hand / Wrist Conditions
           </>
         }
         videoBanner={wristpain}
         videoUrl="https://youtu.be/JGOuzorrhm8?si=eVoTPXY0GAXGbSDS"
       >
-        <p className="mb-32 text-balance text-[25px] font-light leading-tight text-white">
+        <p className="text-balance text-lg font-light leading-tight text-white lg:text-[25px]">
           Thumb CMC/Basal Joint Arthritis or Arthritis of the Hand Joints can appear early in life.
           The constant swiveling and pivoting motions of the basal joint, at the base of the thumb,
           tends to wear it out easily. While total joint reconstruction surgery may improve the

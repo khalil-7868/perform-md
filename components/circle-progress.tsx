@@ -68,40 +68,12 @@ const CircleProgress: React.FC<CircleProgressProps> = ({
   return (
     <div ref={ref} style={{ display: 'inline-block' }}>
       <svg
+        style={{ filter: 'drop-shadow(0px 0px 24px rgba(80, 195, 233, 0.1))' }}
         width={size}
         height={size}
         viewBox={`0 0 ${size} ${size}`}
         xmlns="http://www.w3.org/2000/svg"
       >
-        <defs>
-          <filter
-            id="filter0_d"
-            x="0"
-            y="0"
-            width={size}
-            height={size}
-            filterUnits="userSpaceOnUse"
-            colorInterpolationFilters="sRGB"
-          >
-            <feFlood floodOpacity="0" result="BackgroundImageFix" />
-            <feColorMatrix
-              in="SourceAlpha"
-              type="matrix"
-              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-              result="hardAlpha"
-            />
-            <feOffset />
-            <feGaussianBlur stdDeviation="12" />
-            <feComposite in2="hardAlpha" operator="out" />
-            <feColorMatrix
-              type="matrix"
-              values="0 0 0 0 0.313726 0 0 0 0 0.764706 0 0 0 0 0.913725 0 0 0 0.1 0"
-            />
-            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
-            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
-          </filter>
-        </defs>
-
         {/* Background Circle */}
         <circle
           cx={size / 2}
@@ -110,7 +82,6 @@ const CircleProgress: React.FC<CircleProgressProps> = ({
           fill="none"
           stroke={trailColor}
           strokeWidth={strokeWidth}
-          filter="url(#filter0_d)"
         />
 
         {/* Progress Circle */}

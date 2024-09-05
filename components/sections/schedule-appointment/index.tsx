@@ -2,7 +2,7 @@ export function ScheduleAppointment() {
   return (
     <section className="bg-[#2A333D] px-5 py-12">
       <div className="mx-auto w-full max-w-[500px]">
-        <h2 className="mb-10 text-center text-[45px] font-bold capitalize text-white">
+        <h2 className="mb-10 text-center text-2xl font-bold capitalize !leading-snug text-white md:text-[45px]">
           schedule appointment
         </h2>
         <form action="/thankyou">

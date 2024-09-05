@@ -5,22 +5,22 @@ import sd from './sd.png';
 
 export function ProcedureWork() {
   return (
-    <section className="px-5 pb-36 pt-32">
+    <section className="px-4 py-20 sm:px-5 lg:pb-36 lg:pt-32">
       <div className="mx-auto w-full max-w-[1452px]">
-        <h2 className="mb-32 text-center text-[45px] font-bold leading-none text-white">
+        <h2 className="mb-16 text-center text-2xl font-bold leading-[1.1] text-white lg:mb-32 lg:text-[45px] lg:leading-none">
           How Regenexx Procedures Work
         </h2>
 
-        <div className="flex items-start justify-between gap-8">
-          <div className="relative z-0 w-full max-w-[654px] pl-12">
+        <div className="flex flex-col items-start justify-between gap-16 lg:flex-row lg:gap-8">
+          <div className="relative z-0 w-full max-w-[654px] pl-4 sm:pl-12">
             <Image
               src={sd}
               alt="Bone Marrow Concentrate"
-              width={208}
+              className="w-[184px] lg:w-[208px]"
               style={{ objectFit: 'contain' }}
             />
 
-            <div className="mt-12 space-y-5 text-[19px] font-light leading-none text-white">
+            <div className="mt-12 space-y-5 text-lg font-light leading-none text-white lg:text-[19px]">
               <p>
                 <span className="text-primary">Regenexx-SD</span> is{' '}
                 <span className="text-primary">Bone Marrow Concentrate</span>. These repair cells
@@ -49,15 +49,15 @@ export function ProcedureWork() {
             <div className="pointer-events-none absolute inset-y-0 left-0 w-px bg-[#00A990]" />
           </div>
 
-          <div className="relative z-0 w-full max-w-[654px] pl-12">
+          <div className="relative z-0 w-full max-w-[654px] pl-4 sm:pl-12">
             <Image
               src={scp}
               alt="Bone Marrow Concentrate"
-              width={208}
+              className="w-[184px] lg:w-[208px]"
               style={{ objectFit: 'contain' }}
             />
 
-            <div className="mt-12 space-y-5 text-[19px] font-light leading-none text-white">
+            <div className="mt-12 space-y-5 text-lg font-light leading-none text-white lg:text-[19px]">
               <p>
                 Platelet Rich Plasma (<span className="text-primary">PRP</span>) and{' '}
                 <span className="text-primary">Platelet Lysate</span> are Platelet procedures that
@@ -83,7 +83,7 @@ export function ProcedureWork() {
               </p>
             </div>
 
-            <div className="pointer-events-none absolute inset-y-0 left-0 w-px bg-[#00A990]" />
+            <div className="pointer-events-none absolute inset-y-0 left-0 w-px bg-primary" />
           </div>
         </div>
       </div>
