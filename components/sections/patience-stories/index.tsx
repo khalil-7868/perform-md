@@ -16,42 +16,38 @@ const stories = [
   {
     label: 'Meniscus tear Recovery without surgery',
     author: 'Martin Fuentes (Regenexx)',
-    banner: slide1
+    banner: slide1,
+    videoLink: 'https://youtu.be/Ms6no0SZvM8?si=G1fP0HqIIyZBBROA'
   },
   {
     label: 'IFBB Pro Comeback Story',
     author: 'Martin Fuentes (Regenexx)',
-    banner: slide2
+    banner: slide2,
+    videoLink: 'https://youtu.be/BDtw1C8Ho50?si=6VaE5egYuhRgXYQo'
   },
   {
     label: 'Meniscus tear Recovery without surgery',
     author: 'Martin Fuentes (Regenexx)',
-    banner: slide3
+    banner: slide3,
+    videoLink: 'https://youtu.be/f9CrWjxF3Y4?si=hGF3fPFZMAOVTKLC'
   },
   {
     label: 'Meniscus tear Recovery without surgery',
     author: 'Martin Fuentes (Regenexx)',
-    banner: slide4
+    banner: slide4,
+    videoLink: 'https://youtu.be/hkmiEQfj_dE?si=pn3_MNazY76x2rZR'
   },
   {
     label: 'Meniscus tear Recovery without surgery',
     author: 'Martin Fuentes (Regenexx)',
-    banner: slide3
+    banner: slide3,
+    videoLink: 'https://youtu.be/V0j4K-F8fHU?si=LnvInH354D86lhY-'
   },
   {
     label: 'Meniscus tear Recovery without surgery',
     author: 'Martin Fuentes (Regenexx)',
-    banner: slide4
-  },
-  {
-    label: 'Meniscus tear Recovery without surgery',
-    author: 'Martin Fuentes (Regenexx)',
-    banner: slide3
-  },
-  {
-    label: 'Meniscus tear Recovery without surgery',
-    author: 'Martin Fuentes (Regenexx)',
-    banner: slide4
+    banner: slide4,
+    videoLink: 'https://youtu.be/j7YlBN5TNjg?si=zhEaQTKk8yld1VLX'
   }
 ];
 

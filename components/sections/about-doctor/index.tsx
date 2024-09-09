@@ -30,7 +30,7 @@ export function AboutDoctor(props: Props) {
       </>
     ),
     button_label = 'LEARN MORE',
-    button_link = '#',
+    button_link = '/regenexx',
     varient = 'default',
     picture = banner
   } = props;

@@ -102,7 +102,7 @@ export function Acheivements() {
           </div>
           <div className="flex w-full flex-col lg:block lg:max-w-[401px]">
             <Link
-              href="#"
+              href="/become-candidate"
               className="relative z-0 order-last mt-5 flex h-16 w-full items-center justify-center gap-5 bg-[#485869] px-5 text-[23px] font-black uppercase text-white lg:order-none lg:mb-14 lg:mt-0"
               style={{ boxShadow: '8px 8px #2A333D' }}
             >

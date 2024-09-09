@@ -78,8 +78,8 @@ export function ServiceCards(props: Props) {
           </h2>
         </div>
       )}
-      <div className="relative z-0 px-4 md:px-10 lg:px-16">
-        <div className="mx-auto mb-10 w-full max-w-[1338px] md:mb-20">
+      <div className="relative z-0 px-4 md:px-10 lg:px-20">
+        <div className="mx-auto mb-10 w-full max-w-[1920px] md:mb-20">
           <Swiper
             slidesPerView={1.4}
             modules={[Scrollbar, Navigation]}
@@ -102,15 +102,18 @@ export function ServiceCards(props: Props) {
               1100: {
                 slidesPerView: 3,
                 spaceBetween: 46
+              },
+              1440: {
+                slidesPerView: 4
               }
             }}
           >
             {servicesData.map((service, index) => (
               <SwiperSlide
                 key={index}
-                className="group border-4 border-transparent transition-all duration-200 md:border-8 [&.swiper-slide-active]:border-primary "
+                className="group border-4 border-transparent transition-all duration-200 hover:border-primary md:border-8 "
               >
-                <div className="relative z-0 h-[253px] w-full border-b-8 border-b-white group-[&.swiper-slide-active]:border-b-primary md:h-[486px]">
+                <div className="relative z-0 h-[253px] w-full border-b-8 border-b-white transition-all group-hover:border-b-primary md:h-[486px]">
                   <div
                     className="absolute inset-x-0 top-0 z-10 flex h-[134px] items-start justify-between gap-5 pb-5 pl-4.5 pr-6 pt-4.5"
                     style={{
@@ -146,7 +149,7 @@ export function ServiceCards(props: Props) {
                     className="pointer-events-none size-full object-cover"
                   />
 
-                  <p className="absolute bottom-4 left-1/2 z-10 flex -translate-x-1/2 cursor-pointer items-end gap-2 text-xs font-light leading-[.8] tracking-[-0.504px] text-white opacity-0 hover:underline group-[&.swiper-slide-active]:opacity-100 md:bottom-8 md:text-[25.22px]">
+                  <p className="absolute bottom-4 left-1/2 z-10 flex -translate-x-1/2 cursor-pointer items-end gap-2 text-xs font-light leading-[.8] tracking-[-0.504px] text-white opacity-0 transition-all hover:underline group-hover:opacity-100 md:bottom-8 md:text-[25.22px]">
                     <span>Learn More</span>
                     <svg
                       className="shrink-0"
@@ -172,17 +175,18 @@ export function ServiceCards(props: Props) {
                     }}
                   />
                   <Link href={service.link} className="absolute inset-0 z-20" />
-                  <div className="absolute -bottom-4 z-0 h-2 bg-white opacity-0 group-[&.swiper-slide-active]:bg-primary group-[&.swiper-slide-active]:opacity-100 md:inset-x-0 md:h-4" />
+                  <div className="absolute -bottom-4 z-0 h-2 bg-white opacity-0 transition-all group-hover:bg-primary group-hover:opacity-100 md:inset-x-0 md:h-4" />
                   <div className="pointer-events-none absolute inset-0 z-0 bg-[#2A333D]/50" />
                 </div>
               </SwiperSlide>
             ))}
           </Swiper>
         </div>
-        <button className="service-prev absolute left-[8vw] top-1/2 z-50 hidden -translate-y-1/2 md:block">
+        <button className="service-prev absolute left-8 top-1/2 z-50 hidden size-20 -translate-y-1/2 items-center justify-center rounded-full transition-all hover:bg-primary disabled:cursor-not-allowed disabled:bg-gray-600 disabled:brightness-50 disabled:hover:bg-gray-600 md:flex">
           <svg
             width="34"
             height="61"
+            className="size-10"
             viewBox="0 0 34 61"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -196,10 +200,11 @@ export function ServiceCards(props: Props) {
           </svg>
         </button>
 
-        <button className="service-next absolute right-[8vw] top-1/2 z-50 hidden -translate-y-1/2 md:block">
+        <button className="service-next absolute right-8 top-1/2 z-50 hidden size-20 -translate-y-1/2 items-center justify-center rounded-full transition-all hover:bg-primary disabled:cursor-not-allowed disabled:bg-gray-600 disabled:brightness-50 disabled:hover:bg-gray-600 md:flex">
           <svg
             width="34"
             height="61"
+            className="size-10"
             viewBox="0 0 34 61"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"

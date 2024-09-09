@@ -92,7 +92,7 @@ export function Footer() {
                   orthopedics and spine
                 </p>
                 <p className="text-base font-light !leading-none lg:text-[25px]">
-                  <Link href="#">About Us</Link>
+                  <Link href="/regenexx">About Us</Link>
                 </p>
               </div>
             </div>

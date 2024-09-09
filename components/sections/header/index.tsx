@@ -49,14 +49,14 @@ export function Header() {
   const pathName = usePathname();
   return (
     <header className="relative z-50">
-      <div className="flex h-7 items-center justify-center gap-5.5 bg-dark-16181B px-4 sm:px-10 lg:h-12.5">
-        <div className="md:text-13 flex items-center gap-1 text-[8px] uppercase -tracking-0.26px">
+      <div className="flex h-8 items-center justify-center gap-5.5 bg-dark-16181B px-4 sm:px-10 lg:h-12.5">
+        <div className="flex items-center gap-1 text-[10px] uppercase -tracking-0.26px md:text-13">
           <p className="font-bold text-white">Give US A CALL</p>
           <Link href="tel:+18888282131" className="font-light text-primary hover:underline">
             +1 (888) 828-2131
           </Link>
         </div>
-        <div className="md:text-13 flex items-center gap-1 text-[8px] uppercase -tracking-0.26px">
+        <div className="flex items-center gap-1 text-[10px] uppercase -tracking-0.26px md:text-13">
           <p className="font-bold text-white">schedule appointment </p>
           <Link href="/schedule-appointment" className="font-light text-primary hover:underline">
             CLICK HERE

@@ -1,7 +1,7 @@
 export const NAV_DATA = [
   {
     label: 'ABOUT US',
-    link: '/'
+    link: '/regenexx'
   },
   {
     label: 'SERVICES',
@@ -40,10 +40,6 @@ export const NAV_DATA = [
         link: '/spine-pain'
       }
     ]
-  },
-  {
-    label: 'LEARN MORE',
-    link: '#'
   },
   {
     label: 'LOCATIONS',
