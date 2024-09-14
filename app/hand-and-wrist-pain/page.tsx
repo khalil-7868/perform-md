@@ -55,7 +55,7 @@ export default function Page() {
           </>
         }
         videoBanner={wristpain}
-        videoUrl="https://youtu.be/JGOuzorrhm8?si=eVoTPXY0GAXGbSDS"
+        videoUrl="https://youtu.be/U8SygxP4clg?si=VrPyjKlz54xCatXj"
       >
         <p className="text-balance text-lg font-light leading-tight text-white lg:text-[25px]">
           Thumb CMC/Basal Joint Arthritis or Arthritis of the Hand Joints can appear early in life.

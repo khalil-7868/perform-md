@@ -62,7 +62,7 @@ text-lg font-bold leading-none text-white lg:text-[25px]"
         }
         contentOrder={'first'}
         videoBanner={shoulderpain}
-        videoUrl="https://youtu.be/JGOuzorrhm8?si=eVoTPXY0GAXGbSDS"
+        videoUrl="https://youtu.be/U8SygxP4clg?si=VrPyjKlz54xCatXj"
       >
         <p className="text-balance text-lg font-light leading-tight text-white lg:text-[25px]">
           Using the healing agents from your own body to treat rotator cuff tears, shoulder

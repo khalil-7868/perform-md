@@ -1,5 +1,7 @@
 'use client';
 
+import { CloseButton, Dialog, DialogPanel } from '@headlessui/react';
+import { X } from 'lucide-react';
 import { useState } from 'react';
 import 'swiper/css';
 import { FreeMode, Navigation, Scrollbar, Thumbs } from 'swiper/modules';
@@ -7,6 +9,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 import Image from 'next/image';
 
+import { SlideData } from './SlideData';
 import slide1 from './slide-1.png';
 import slide2 from './slide-2.png';
 import slide3 from './slide-3.png';
@@ -74,39 +77,7 @@ export function PatienceStories() {
               >
                 {stories.map((story, index) => (
                   <SwiperSlide key={index}>
-                    <div className="relative z-0 h-full">
-                      <button className="absolute left-1/2 top-1/2 z-10 -translate-x-1/2 -translate-y-1/2">
-                        <svg
-                          width="120"
-                          height="120"
-                          className="size-15 xl:size-[120px]"
-                          viewBox="0 0 120 120"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <g opacity="0.8">
-                            <circle cx="60" cy="60" r="58" stroke="white" strokeWidth="4" />
-                            <path d="M88 60L45 83L45 37L88 60Z" fill="white" />
-                          </g>
-                        </svg>
-                      </button>
-
-                      <div className="absolute bottom-3 left-3 z-10 text-white md:bottom-12 md:left-12">
-                        <h4 className="text-xs font-bold leading-none md:text-[25px]">
-                          {story.label}
-                        </h4>
-                        <p className="text-xs font-light leading-none md:text-[25px]">
-                          {story.author}
-                        </p>
-                      </div>
-
-                      <Image
-                        src={story.banner}
-                        alt={story.label}
-                        className="pointer-events-none size-full object-cover"
-                      />
-                      <div className="pointer-events-none absolute inset-0 size-full bg-[#2A333D]/50" />
-                    </div>
+                    <SlideData story={story} />
                   </SwiperSlide>
                 ))}
               </Swiper>

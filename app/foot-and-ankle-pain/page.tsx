@@ -54,7 +54,7 @@ export default function Page() {
         className="bg-transparent pb-32 pt-0"
         contentOrder={'first'}
         videoBanner={anklepain}
-        videoUrl="https://youtu.be/JGOuzorrhm8?si=eVoTPXY0GAXGbSDS"
+        videoUrl="https://youtu.be/U8SygxP4clg?si=VrPyjKlz54xCatXj"
       >
         <h2 className="mb-11 text-2xl font-bold !leading-[1.1] text-white md:mb-16 md:text-[45px]">
           Considering Ankle Surgery, <br /> Fusion or Replacement?

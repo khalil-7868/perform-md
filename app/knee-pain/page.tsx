@@ -63,7 +63,7 @@ export default function Page() {
         className="bg-transparent pb-16 pt-0"
         contentOrder={'first'}
         videoBanner={kneepain}
-        videoUrl="https://youtu.be/JGOuzorrhm8?si=eVoTPXY0GAXGbSDS"
+        videoUrl="https://youtu.be/U8SygxP4clg?si=VrPyjKlz54xCatXj"
       >
         <h4 className="mb-6 text-[25px] font-bold leading-none text-white lg:text-[45px]">
           Your Alternative to Knee Surgery
@@ -83,7 +83,7 @@ export default function Page() {
         className="bg-transparent pb-16 pt-0"
         contentOrder={'last'}
         videoBanner={kneepain}
-        videoUrl="https://youtu.be/JGOuzorrhm8?si=eVoTPXY0GAXGbSDS"
+        videoUrl="https://youtu.be/U8SygxP4clg?si=VrPyjKlz54xCatXj"
       >
         <p className="text-balance text-lg font-light leading-tight text-white lg:text-[25px]">
           We have seen exciting results on difficult cases, such as complete muscle and ligament

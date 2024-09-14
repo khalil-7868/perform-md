@@ -24,7 +24,7 @@ export default function Page() {
       <PainHero background={background} />
       <RegenexxProcedure
         videoBanner={spineThumb}
-        videoUrl="https://youtu.be/8tdqYj3UUDU?si=chpTuLViHJ3A0e_a"
+        videoUrl="https://youtu.be/ZuKckDE1ntQ?si=1rBzgwZFlCUJN2km"
         contentOrder="first"
         titleClasses="lg:hidden"
         title={<>Regenexx® Non-Surgical Procedures for Spine-Related Conditions.</>}
@@ -56,7 +56,7 @@ export default function Page() {
         imageClasses="object-contain max-w-[524px] drop-shadow-[0px_4px_120px_rgba(80,195,233,0.2)]"
         contentOrder={'first'}
         videoBanner={spineThumb}
-        videoUrl="https://youtu.be/8tdqYj3UUDU?si=chpTuLViHJ3A0e_a"
+        videoUrl="https://youtu.be/ZuKckDE1ntQ?si=1rBzgwZFlCUJN2km"
         titleClasses="lg:hidden"
         title={<>Regenexx Alternative to Spine Surgery or Steroid Epidural Injections</>}
       >

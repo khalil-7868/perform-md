@@ -70,7 +70,7 @@ const Video = (props: Props) => {
         </div>
       )}
       {showVideo ? (
-        <div className="bg-black" style={{ height: videoHeight }}>
+        <div className="overflow-hidden rounded-5 bg-black" style={{ height: videoHeight }}>
           <ReactPlayer
             url={props.url}
             controls

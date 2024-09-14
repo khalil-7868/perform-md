@@ -59,7 +59,8 @@ export function PainHero(props: Props) {
             <span>Call 702-830-7216</span>
           </Link>
           <Link
-            href="/become-candidate"
+            href="https://keap.page/bzc536/candidate-form-landing-page.html"
+            target="_blank"
             className="flex items-center gap-2 text-sm text-white sm:text-xl"
           >
             <User className="size-4 text-primary sm:size-6" />

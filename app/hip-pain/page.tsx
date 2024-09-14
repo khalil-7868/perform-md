@@ -58,7 +58,7 @@ export default function Page() {
         }
         contentOrder={'first'}
         videoBanner={hippain}
-        videoUrl="https://youtu.be/JGOuzorrhm8?si=eVoTPXY0GAXGbSDS"
+        videoUrl="https://youtu.be/U8SygxP4clg?si=VrPyjKlz54xCatXj"
       >
         <p className="text-balance text-lg font-light leading-tight text-white lg:text-[25px]">
           Hip pain can be very difficult to deal with on a day-to-day basis and traditionally
