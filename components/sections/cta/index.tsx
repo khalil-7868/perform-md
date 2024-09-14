@@ -34,7 +34,8 @@ export function CTA(props: Props) {
               <ArrowUpRight className="size-4.5 shrink-0 text-current" />
             </Link>
             <Link
-              href="/schedule-appointment"
+              href="https://keap.page/bzc536/candidate-form-landing-page.html"
+              target="_blank"
               className="flex h-10 items-center justify-center gap-1.5 bg-primary px-6 text-sm font-bold uppercase -tracking-0.02em text-white"
             >
               <span>schedule APPOINTMENT</span>
@@ -59,7 +60,8 @@ export function CTA(props: Props) {
           <ArrowUpRight className="size-4.5 shrink-0 text-current" />
         </Link>
         <Link
-          href="/schedule-appointment"
+          href="https://keap.page/bzc536/candidate-form-landing-page.html"
+          target="_blank"
           className="flex h-10 w-full items-center justify-center gap-1.5 bg-primary px-6 text-sm font-bold uppercase -tracking-0.02em text-white sm:w-fit"
         >
           <span>schedule APPOINTMENT</span>

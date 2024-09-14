@@ -58,7 +58,7 @@ export function Header() {
         </div>
         <div className="flex items-center gap-1 text-[10px] uppercase -tracking-0.26px md:text-13">
           <p className="font-bold text-white">schedule appointment </p>
-          <Link href="/schedule-appointment" className="font-light text-primary hover:underline">
+          <Link href="https://keap.page/bzc536/candidate-form-landing-page.html" target="_blank" className="font-light text-primary hover:underline">
             CLICK HERE
           </Link>
         </div>
@@ -105,7 +105,7 @@ export function Header() {
             <ArrowUpRight className="absolute right-3 top-1/2 size-4.5 -translate-y-1/2 2xl:right-8" />
           </Link>
           <Link
-            href="/schedule-appointment"
+            href="https://keap.page/bzc536/candidate-form-landing-page.html" target="_blank"
             className="relative z-0 flex w-[150px] items-center justify-center bg-[#191C20] text-base font-bold uppercase -tracking-0.02em text-white 2xl:w-[275px] 2xl:text-xl"
           >
             <span>schedule</span>
